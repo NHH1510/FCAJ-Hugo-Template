@@ -16,6 +16,14 @@ home = [ "HTML", "RSS", "JSON"]
   disableBreadcrumb = false
   disableNextPrev = false
   
+  baseURL = 'https://NHH1510.github.io/FCAJ-Hugo-Template/'
+
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+relativeURLs = true
+canonifyURLs = true
+
 [Languages]
 [Languages.en]
 title = "AWS System Manager"
