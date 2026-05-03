@@ -3,7 +3,7 @@ title: "Nhât ký làm viêc"
 date :  "`r Sys.Date()`"
 weight: 2
 chapter: true
-pre: "<b>Worklog</b>"
+pre: "<b> 1. </b>"
 ---
 
 ## 📌 Giới thiệu
