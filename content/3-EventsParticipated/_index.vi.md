@@ -1,7 +1,7 @@
 ---
 title: "Events Participated"
 date :  "`r Sys.Date()`" 
-weight: 9
+weight: 3
 chapter: false
 pre: "<b> 3. </b>"
 ---
