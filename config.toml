@@ -1,5 +1,5 @@
 # Change the default theme to be use when building the site with Hugo
-baseURL = "https://nhh1510.github.io/FCAJ-Hugo-Template/"
+baseURL = "https://NHH1510.github.io/FCAJ-Hugo-Template/"
 theme = "hugo-theme-learn"
 
 relativeURLs = true
