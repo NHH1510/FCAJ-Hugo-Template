@@ -1,149 +1,80 @@
 ---
-title : "Worklog"
-date :  "`r Sys.Date()`" 
-weight : 1 
-chapter : false
-pre : " <b> 1. </b> "
+title: "Worklog"
+date :  "`r Sys.Date()`"
+weight: 1
+chapter: true
+pre: "<b>Worklog</b>"
 ---
-## 1.2. Worklog (Nhật ký theo tuần)
 
-### Week 1
-**Công việc đã làm:**
-- Làm quen với đề tài và cùng nhóm phân chia công việc
-- Phân tích yêu cầu hệ thống (music streaming web)
-- Tìm hiểu kiến trúc tổng thể: Frontend – Backend – AWS
-- Setup môi trường:
-  - Node.js
-  - AWS account (Lambda, API Gateway, DynamoDB)
-- Nghiên cứu cách tổ chức API theo RESTful
+## 📌 Giới thiệu
 
-**Kết quả đạt được:**
-- Hiểu rõ vai trò cá nhân: phụ trách module Artists + Albums
-- Nắm được luồng dữ liệu hệ thống
-- Sẵn sàng bắt đầu phát triển backend
+Trang này ghi lại toàn bộ quá trình thực hiện dự án **Music Streaming Web** trong vòng 8 tuần. Nội dung worklog được chia theo từng tuần nhằm thể hiện rõ tiến độ, công việc đã thực hiện và kết quả đạt được trong suốt quá trình phát triển hệ thống.
 
 ---
 
-### Week 2
-**Công việc đã làm:**
-- Thiết kế schema cho Artists:
-  - id, name, image, genre
-- Tạo DynamoDB table (partition key: artist_id)
-- Viết Lambda function:
-  - getArtists
-  - getArtistById
-- Kết nối với API Gateway
-- Test API bằng Postman
+## 🎯 Mục tiêu Worklog
 
-**Kết quả đạt được:**
-- Hoàn thành API:
-  - GET /artists
-  - GET /artists/{id}
-- API trả dữ liệu đúng format JSON
-- Backend Artists hoạt động ổn định
+- Theo dõi tiến độ thực hiện dự án theo từng tuần  
+- Ghi lại các công việc đã thực hiện (Tasks)  
+- Đánh giá kết quả đạt được (Achievements)  
+- Thể hiện khả năng làm việc với hệ thống AWS serverless  
+- Minh họa quá trình phát triển từ backend → frontend → deploy  
 
 ---
 
-### Week 3
-**Công việc đã làm:**
-- Thiết kế schema cho Albums:
-  - id, title, artist_id, release_date, image
-- Tạo DynamoDB table Albums
-- Implement API:
-  - GET /albums
-  - GET /artists/{id}/albums
-- Tối ưu query theo artist_id
-- Test integration với Artists
+## 🧩 Phạm vi công việc
 
-**Kết quả đạt được:**
-- Hoàn thành module Albums backend
-- Query theo artist hoạt động chính xác
-- Liên kết dữ liệu Artists – Albums thành công
+Phần công việc phụ trách trong dự án bao gồm:
+
+- Thiết kế và xây dựng module **Artists**
+- Thiết kế và xây dựng module **Albums**
+- Xây dựng API backend với AWS Lambda và API Gateway  
+- Thiết kế cơ sở dữ liệu với DynamoDB  
+- Tích hợp frontend (React) để hiển thị dữ liệu  
+- Xử lý upload và lưu trữ hình ảnh với S3  
+- Tối ưu hiệu năng và kiểm thử hệ thống  
+- Deploy và hoàn thiện sản phẩm  
 
 ---
 
-### Week 4
-**Công việc đã làm:**
-- Setup frontend (React)
-- Xây dựng trang danh sách Artists
-- Gọi API từ backend (fetch /artists)
-- Hiển thị:
-  - Tên artist
-  - Hình ảnh
-- Thiết lập routing `/artists/:id`
 
-**Kết quả đạt được:**
-- Hiển thị danh sách Artists trên UI
-- Kết nối frontend – backend thành công
-- Luồng dữ liệu hoạt động đúng
+## 📅 Thời gian thực hiện
+
+- Bắt đầu: **09/03/2026**  
+- Kết thúc: **02/05/2026**  
+- Tổng thời gian: **8 tuần**
 
 ---
 
-### Week 5
-**Công việc đã làm:**
-- Xây dựng UI hiển thị Albums theo Artist
-- Gọi API `/artists/{id}/albums`
-- Render danh sách Albums:
-  - Cover image
-  - Title
-- Cải thiện UI/UX (layout, spacing)
+## 📊 Cách tổ chức nội dung
 
-**Kết quả đạt được:**
-- Hiển thị Albums theo Artist chính xác
-- UI rõ ràng, dễ sử dụng hơn
-- Đồng bộ dữ liệu với backend
+Mỗi tuần trong worklog sẽ bao gồm:
+
+- **Objectives:** Mục tiêu của tuần  
+- **Achievements:** Kết quả đạt được  
+- **Tasks Performed:** Danh sách công việc chi tiết theo ngày  
+
+Các nội dung được sắp xếp theo thứ tự thời gian nhằm thể hiện rõ tiến trình phát triển của dự án.
 
 ---
 
-### Week 6
-**Công việc đã làm:**
-- Xây dựng trang chi tiết Artist:
-  - Thông tin + danh sách album
-- Xây dựng trang chi tiết Album
-- Xử lý routing động:
-  - `/artists/:id`
-  - `/albums/:id`
-- Xử lý loading state
+## 🚀 Tổng quan quá trình phát triển
 
-**Kết quả đạt được:**
-- Hoàn thiện chức năng xem chi tiết
-- Trải nghiệm người dùng tốt hơn
-- Luồng điều hướng hoàn chỉnh
+Quá trình thực hiện dự án được chia thành các giai đoạn chính:
 
----
 
-### Week 7
-**Công việc đã làm:**
-- Debug và xử lý lỗi:
-  - CORS
-  - API error
-  - undefined data
-- Refactor code:
-  - Tách component
-  - Clean code
-- Tối ưu performance:
-  - Giảm số lần gọi API
-  - Xử lý state hợp lý
+**Tuần 1:** (Week-1/)
 
-**Kết quả đạt được:**
-- Hệ thống ổn định hơn
-- Giảm lỗi runtime
-- Code dễ maintain hơn
+**Tuần 2:** (Week-2/)
 
----
+**Tuần 3:** (Week-3/)
 
-### Week 8
-**Công việc đã làm:**
-- Deploy backend:
-  - AWS Lambda + API Gateway
-- Deploy frontend:
-  - S3 / GitHub Pages
-- Test end-to-end:
-  - Frontend ↔ Backend
-- Fix lỗi production (CORS, endpoint)
-- Làm project với Hugo và báo cáo thực tập
+**Tuần 4:** (Week-4/)
 
-**Kết quả đạt được:**
-- Module Artists + Albums chạy trên môi trường production
-- Tích hợp thành công với hệ thống nhóm
-- Hoàn thành đầy đủ phần cá nhân trong project
+**Tuần 5:** (Week-5/)
+
+**Tuần 6:** (Week-6/)
+
+**Tuần 7:** (Week-7/)
+
+**Tuần 8:** (Week-8/)
