@@ -1,5 +1,9 @@
 # Change the default theme to be use when building the site with Hugo
+baseURL = "https://nhh1510.github.io/FCAJ-Hugo-Template/"
 theme = "hugo-theme-learn"
+
+relativeURLs = true
+canonifyURLs = true
 
 # For search functionality
 [outputs]
@@ -16,13 +20,6 @@ home = [ "HTML", "RSS", "JSON"]
   disableBreadcrumb = false
   disableNextPrev = false
   
-  baseURL = 'https://NHH1510.github.io/FCAJ-Hugo-Template/'
-
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-
-relativeURLs = true
-canonifyURLs = true
 
 [Languages]
 [Languages.en]
