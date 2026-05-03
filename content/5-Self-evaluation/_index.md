@@ -1,9 +1,9 @@
 ---
 title: "Self-evaluation"
 date :  "`r Sys.Date()`" 
-weight: 6
+weight: 5
 chapter: false
-pre: " <b> 6. </b> "
+pre: " <b> 5. </b> "
 ---
 
 I had the opportunity to learn, practice, and apply the knowledge acquired at university in a real working environment.
