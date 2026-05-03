@@ -3,7 +3,7 @@ title: "Worklog"
 date :  "`r Sys.Date()`"
 weight: 1
 chapter: true
-pre: "<b>Worklog</b>"
+pre: "<b> 1. </b>"
 ---
 
 ## 📌 Introduction
